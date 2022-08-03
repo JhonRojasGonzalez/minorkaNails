@@ -169,10 +169,16 @@ footer {
     padding: 0 22px;
 }
 
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .izquierda img{
     width: 280px;
     height: 110px;
-    padding-top: 10px;
+    padding: 10px;
 }
 .izquierda p{
     text-align: center;
@@ -497,7 +503,7 @@ form label {
     .opcionesResponsive{
         display: block !important;
         left: -100%;
-        transition: all 0.5s linear;
+        transition: all 0.3s linear;
     }
 
     .opciones{
@@ -530,7 +536,8 @@ form label {
 
     .imagen {
         width: 100%;
-        height: 60%;      
+        height: 80%;
+            
     }
 
     iframe{
@@ -549,7 +556,10 @@ form label {
 
     .imagen {
         width: 100%;
-        height: 50%;  
+        height: 70%;
+        margin-top: 100px;
     }
+
+
 
 }
