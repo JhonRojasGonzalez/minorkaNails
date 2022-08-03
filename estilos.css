@@ -427,14 +427,15 @@ form label {
 /* CSS CONTACTO */
 
 .info-map {
+    width: 100%;
     background: rgb(238,174,174);
     background: radial-gradient(circle, rgba(238,174,174,1) 25%, rgba(23,144,255,1) 87%);
 }
 
 .info-map h2, .info-map p{
+    text-align: center;
     color: white;
     padding-top: 20px;
-    margin-left: 50px;
     font-size: 25px;
 }
 
@@ -536,8 +537,7 @@ form label {
 
     .imagen {
         width: 100%;
-        height: 80%;
-            
+        height: 70%;
     }
 
     iframe{
@@ -545,6 +545,9 @@ form label {
         height: 390px;
     }
 
+    .map p{
+        font-size: 15px;
+    }
 
 }
 
@@ -556,7 +559,7 @@ form label {
 
     .imagen {
         width: 100%;
-        height: 70%;
+        height: 60%;
         margin-top: 100px;
     }
 
