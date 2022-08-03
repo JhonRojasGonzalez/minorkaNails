@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(0, 0, 0);
+}
+
+body {
+    max-width: 1380px;
+    height: 100%;
+    margin: auto;
+
+}
+
+header {
+    background-color: hsla(55, 13%, 83%, 0.804);
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 1380px;
+    height: 150px;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav img {
+    width: 350px;
+    height: 120px;
+
+}
+
+/* estilos para el menu */
+
+.opcionesResponsive{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+.opcionesResponsive li a{
+    display: block;   
+    background: rgb(34, 193, 195);
+    padding: 25px 0;
+    color: #ffff;
+}
+
+.opcionesResponsive li a:hover{
+    background-color: blueviolet;
+}
+
+    
+.opciones {
+    display: flex;
+    height: 60px;
+    gap: 5px;
+    align-items: center;
+}
+
+
+.opciones li a{
+    background: rgb(34, 193, 195);
+    padding: 25px;
+    border-radius: 10px;
+    color: #ffff;
+}
+
+
+
+.opciones li {
+    transition: all .3s;
+}
+
+.opciones li:hover a{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.opciones li:hover{
+    transform: scale(1.1);
+}
+
+main {
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.menuHide{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: blueviolet;
+    border-radius: 10px;
+    display: none;
+    color: #ffff;
+    
+}
+
+#home{
+    display: none;
+}
+
+
+/* contenido index */
+
+.index-theme {
+    background-image: url(../img/ideas-decoracion-salon-de-unas-pinterest-inspiracion-flowww.webp);
+    background-size: 100% 100%;
+}
+
+.titulo {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffff;
+}
+
+.titulo h1 {
+    text-align: center;
+    color: aquamarine;
+    padding: 30px;
+    font-size: 40px;
+
+}
+
+.titulo h3 {
+    text-align: center;
+    color: plum;
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+.titulo p {
+    text-align: justify;
+    padding: 20px 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+
+
+/* estilos del footer */
+
+footer {
+    background-color: #eeecd4;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.izquierda, .derecha{
+    padding: 0 22px;
+}
+
+.izquierda img{
+    width: 280px;
+    height: 110px;
+    padding-top: 10px;
+}
+.izquierda p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.derecha img{
+    width: 70px;
+    height: 70px;
+    padding: 5px 5px;
+}
+
+.derecha p{
+    text-align: center;
+    padding: 5px;
+}
+
+.derecha img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+/* CSS DE GALERIAS */
+
+.galeria-tema {
+    background-image: url(../img/WhatsApp\ Image\ 2022-07-12\ at\ 6.13.51\ PM.jpeg);
+}
+
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.galeria h1{
+    background: rgb(34, 193, 195);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.galeria img {
+    width: 280px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.modal {
+    display: none;
+}
+
+
+.modal:target {
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+}
+
+.imagen {
+    margin-top: 60px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #dad9cf;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0%;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+.cerrar {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+    font-size: 30px;
+    color: #eeecd4;
+
+}
+
+
+
+/* css servicios contenedor de cajas */
+
+.service-theme {
+    background-image: url(../img/WhatsApp\ Image\ 2022-07-12\ at\ 6.13.51\ PM.jpeg);
+}
+
+.contenedor-cajas h1{
+    background: rgb(34, 193, 195);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.contenedor-cajas {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.boxService {
+    margin: 15px auto 15px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    box-shadow: 0px 0px 5px 10px rgba(220, 186, 255, 0.4);
+}
+
+.boxService:hover {
+    box-shadow: 0px 0px 10px 15px rgba(174, 104, 243, 0.4);
+}
+
+.boxService img {
+    width: 100%;
+
+}
+
+.boxService h3 {
+    text-align: center;
+    padding: 15px;
+}
+
+.boxService p {
+    padding: 20px 30px;
+}
+
+
+
+
+
+/*  CSS AGENDA */
+
+.agenda {
+    background-image: url(../img/salón-del-clavo-y-de-la-pedicura-moderno-con-el-esmalte-de-uñas-colorido-en-un-r-37501394.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    
+    
+
+}
+
+.agenda h1{
+    background: rgb(34, 193, 195);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+
+form {
+    background-color: rgba(174, 18, 145, 0.8);
+    margin-top: 15px;
+    font-size: 22px;
+    color: white;
+    width: 500px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+form input{
+    margin: 20px 0px;
+}
+
+form h3 {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgb(230, 92, 240) 100%);
+    color: #eeecd4;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form label {
+    margin-left: 10px;
+}
+
+.btn-field input {
+    color: #ffff;
+    background-color: blueviolet;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    border: none;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.btn-field input:hover {
+    cursor: pointer;
+    background: rgb(170, 102, 234);
+
+}
+
+.lista-precios img {
+    width: 100%;
+    margin-top: 15px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+/* CSS CONTACTO */
+
+.info-map {
+    background: rgb(238,174,174);
+    background: radial-gradient(circle, rgba(238,174,174,1) 25%, rgba(23,144,255,1) 87%);
+}
+
+.info-map h2, .info-map p{
+    color: white;
+    padding-top: 20px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.direccion {
+    padding: 20px;
+    color: #ffff;
+}
+
+
+.map {
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 50px;
+}
+
+
+@media (max-width: 920px) {
+    header{
+        height: 200px;
+    }
+    nav{
+        flex-direction: column;
+
+    }
+    .opciones {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .galeria{
+        margin-top: 50px;
+    }
+
+    .titulo{
+        margin-top: 50px;
+    }
+
+    .contenedor-cajas{
+        padding-top: 50px;
+    }
+
+    .map{
+        padding-top: 50px;
+        
+    }
+    
+    .lista-precios{
+        margin: auto;
+
+    }
+
+    .agenda h1{
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 719px) {
+    .menuHide{
+        display: block !important;
+        margin-top: 30px;
+    }
+
+    .opcionesResponsive{
+        display: block !important;
+        left: -100%;
+        transition: all 0.5s linear;
+    }
+
+    .opciones{
+        display: none !important;
+    }
+
+    nav #home:checked + label ~ .opcionesResponsive{
+        left: 0%;
+    }
+
+    .index-theme {
+        background-image: url(../img/vertical.jpg);
+        background-size: 100% 100%;
+    }
+
+    .agenda{
+        padding-top: 200px;
+        padding-bottom: 5px;
+    }
+
+    
+    .agenda h1{
+        margin-top: 0px;
+    }
+
+
+    .imagen {
+        width: 100%;
+        height: 60%;      
+    }
+
+    iframe{
+        width: 400px;
+        height: 400px;
+    }
+
+
+}
