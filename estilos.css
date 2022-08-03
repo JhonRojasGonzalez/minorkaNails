@@ -379,7 +379,6 @@ form {
     font-size: 22px;
     color: white;
     width: 500px;
-    height: 450px;
     border: none;
     border-radius: 10px;
 }
@@ -400,13 +399,15 @@ form label {
     margin-left: 10px;
 }
 
+.btn-field{
+    display: flex;
+    justify-content: center;
+}
+
 .btn-field input {
     color: #ffff;
     background-color: blueviolet;
     padding: 10px 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-left: 200px;
     border: none;
     box-shadow: 0 0 5px rgb(255, 255, 255);
 }
