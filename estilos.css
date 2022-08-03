@@ -119,7 +119,7 @@ main {
 /* contenido index */
 
 .index-theme {
-    background-image: url(../img/ideas-decoracion-salon-de-unas-pinterest-inspiracion-flowww.webp);
+    background-image: url(./img/ideas-decoracion-salon-de-unas-pinterest-inspiracion-flowww.webp);
     background-size: 100% 100%;
 }
 
@@ -201,7 +201,7 @@ footer {
 /* CSS DE GALERIAS */
 
 .galeria-tema {
-    background-image: url(../img/WhatsApp\ Image\ 2022-07-12\ at\ 6.13.51\ PM.jpeg);
+    background-image: url(./img/WhatsApp\ Image\ 2022-07-12\ at\ 6.13.51\ PM.jpeg);
 }
 
 
@@ -290,7 +290,7 @@ footer {
 /* css servicios contenedor de cajas */
 
 .service-theme {
-    background-image: url(../img/WhatsApp\ Image\ 2022-07-12\ at\ 6.13.51\ PM.jpeg);
+    background-image: url(./img/WhatsApp\ Image\ 2022-07-12\ at\ 6.13.51\ PM.jpeg);
 }
 
 .contenedor-cajas h1{
@@ -347,7 +347,7 @@ footer {
 /*  CSS AGENDA */
 
 .agenda {
-    background-image: url(../img/salón-del-clavo-y-de-la-pedicura-moderno-con-el-esmalte-de-uñas-colorido-en-un-r-37501394.jpg);
+    background-image: url(./img/salón-del-clavo-y-de-la-pedicura-moderno-con-el-esmalte-de-uñas-colorido-en-un-r-37501394.jpg);
     background-size: 100% 100%;
     display: flex;
     flex-wrap: wrap;
@@ -509,8 +509,12 @@ form label {
     }
 
     .index-theme {
-        background-image: url(../img/vertical.jpg);
+        background-image: url(./img/vertical.jpg);
         background-size: 100% 100%;
+    }
+
+    .titulo p{
+        padding: 20px 50px;
     }
 
     .agenda{
@@ -530,9 +534,22 @@ form label {
     }
 
     iframe{
-        width: 400px;
-        height: 400px;
+        width: 390px;
+        height: 390px;
     }
 
+
+}
+
+@media (max-width: 400px) {
+    iframe{
+        width: 350px;
+        height: 350px;
+    }
+
+    .imagen {
+        width: 100%;
+        height: 50%;  
+    }
 
 }
