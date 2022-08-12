@@ -17,6 +17,8 @@ body {
 
 }
 
+/* HEADER */
+
 header {
     background-color: hsla(55, 13%, 83%, 0.804);
     margin: 0 auto;
@@ -28,6 +30,8 @@ header {
     position: fixed;
     z-index: 20;
 }
+
+/* NAV */
 
 nav {
     width: 100%;
@@ -42,7 +46,7 @@ nav img {
 
 }
 
-/* estilos para el menu */
+/* MENU OCULTO*/
 
 .opcionesResponsive{
     width: 100%;
@@ -64,7 +68,24 @@ nav img {
     background-color: blueviolet;
 }
 
+.menuHide{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: blueviolet;
+    border-radius: 10px;
+    display: none;
+    color: #ffff;
     
+}
+
+#home{
+    display: none;
+}
+
+
+/* MENU PRINCIPAL */    
+
 .opciones {
     display: flex;
     height: 60px;
@@ -100,23 +121,9 @@ main {
     padding-top: 150px;
 }
 
-.menuHide{
-    width: 100%;
-    padding: 15px;
-    text-align: center;
-    background: blueviolet;
-    border-radius: 10px;
-    display: none;
-    color: #ffff;
-    
-}
-
-#home{
-    display: none;
-}
 
 
-/* contenido index */
+/*CONTENIDO INDEX*/
 
 .index-theme {
     background-image: url(./img/ideas-decoracion-salon-de-unas-pinterest-inspiracion-flowww.webp);
@@ -154,7 +161,7 @@ main {
 }
 
 
-/* estilos del footer */
+/* ESTILO DEL FOOTER */
 
 footer {
     background-color: #eeecd4;
@@ -293,7 +300,7 @@ footer {
 
 
 
-/* css servicios contenedor de cajas */
+/* CSS SERVICIOS (contenedor de cajas)*/
 
 .service-theme {
     background-image: url(./img/WhatsApp\ Image\ 2022-07-12\ at\ 6.13.51\ PM.jpeg);
@@ -453,6 +460,7 @@ form label {
     padding-bottom: 50px;
 }
 
+/* MEDIAS QUERIES */
 
 @media (max-width: 920px) {
     header{
