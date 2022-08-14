@@ -460,11 +460,17 @@ form label {
     padding-bottom: 50px;
 }
 
-/* TENDENCIAS */
+/* CURSOS CSS */
 
 .bg-color{
     background-color: #22c1c3;
     color: white;
+}
+
+.bg-nav{
+    background-color: rgb(221, 137, 221);
+    color: white;
+    font-size: 1.5rem;
 }
 
 /* MEDIAS QUERIES */
