@@ -4,7 +4,7 @@
     text-decoration: none !important;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -472,6 +472,15 @@ form label {
     color: white;
     font-size: 1.5rem;
 }
+
+.tituloColor{
+    color: rgb(88, 19, 152);
+}
+
+.size-p{
+    font-size: 1.2rem;
+}
+
 
 /* MEDIAS QUERIES */
 
