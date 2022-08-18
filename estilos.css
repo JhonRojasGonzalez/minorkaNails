@@ -127,8 +127,9 @@ main {
 /*CONTENIDO INDEX*/
 
 .index-theme {
-    background-image: url(./img/ideas-decoracion-salon-de-unas-pinterest-inspiracion-flowww.webp);
+    background-image: url(./img/background-index.png);
     background-size: 100% 100%;
+    width: 100%;
 }
 
 .titulo {
@@ -483,6 +484,15 @@ form label {
 
 
 /* MEDIAS QUERIES */
+
+@media (min-width: 1400px){
+    .index-theme{
+        height: 100vh;
+    }
+    .titulo{
+        height: 100vh;
+    }
+} 
 
 @media (max-width: 920px) {
     header{
