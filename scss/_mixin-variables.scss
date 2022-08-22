@@ -1,0 +1,45 @@
+/* mixins */
+
+@mixin txtMap {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 25px;    
+}
+
+@mixin lg-screen{
+    @media (min-width: 1400px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width: 920px){
+        @content; 
+    }
+}
+
+@mixin xs-phone{
+    @media (max-width: 400px){
+        @content;        
+    }
+}
+
+
+/* variables */
+
+$btn-color:#22c1c3;
+$btn-hover-color:#8a2be2;
+$bg-color: #eeecd4;
+$leter-color:#ffff;
+
+/* Extends */
+
+.titulos-h1{
+    background: $btn-color;
+    width: 100%;
+    text-align: center;
+    color: $leter-color;
+    padding: 23px;
+    font-size: 1.5rem;
+}
