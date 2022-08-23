@@ -1,0 +1,12 @@
+Modificaciones
+
+•	Agregando SEO a mis HTML del proyecto con las etiquetas <meta>
+•	Agregamos directorio Sass con sus respectivos archivos de extensión Scss.
+•	Se reemplazó todo el código de css por el sass.
+•	Se incluyó variables ($), @mixin, y algunos @extend, que se linkearon con el @import.
+•	Se añadió a uno de los HTML código de la biblioteca Bootstrap 5.
+•	Optimización de tamaño de las imágenes.
+•	Full responsive.
+•	Se comentaron las secciones de los HTML, Sass y Css.
+•	Se idento completamente el código .
+
