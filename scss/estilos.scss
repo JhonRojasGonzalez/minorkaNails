@@ -16,25 +16,19 @@ html {
         max-width: 1380px;
         height: 100%;
         margin: auto;
-
-        main {
-            margin: 0 auto;
-            padding-top: 150px;
-        }
     }
 }
 
 /* NAV */
 
 header {
-    background-color: #d9d8cecd;
+    background-color: $bg-color;
     margin: 0 auto;
     display: flex;
     width: 100%;
     max-width: 1380px;
     height: 150px;
     align-items: center;
-    position: fixed;
     z-index: 20;
 
     nav {
@@ -65,10 +59,11 @@ header {
         .opcionesResponsive {
             width: 100%;
             height: 500px;
-            position: fixed;
+            position: absolute;
             top: 200px;
             text-align: center;
             display: none;
+            z-index: 20;
 
             li {
                 a {
@@ -120,14 +115,16 @@ header {
     background-image: url(../img/background-index.png);
     background-size: 100% 100%;
     width: 100%;
-    @include lg-screen(){
+
+    @include lg-screen() {
         height: 100vh;
     }
 
     .titulo {
         background-color: rgba(0, 0, 0, 0.7);
         color: $leter-color;
-        @include lg-screen(){
+
+        @include lg-screen() {
             height: 100vh;
         }
 
@@ -208,12 +205,13 @@ footer {
     background-image: url(../img/bg-animal_print.jpeg);
 
     .galeria {
+        background-color: rgba(0, 0, 0, 0.5);
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
         justify-content: space-evenly;
 
-        h1{
+        h1 {
             @extend .titulos-h1;
         }
 
@@ -247,7 +245,8 @@ footer {
             gap: 20px;
             justify-content: center;
             align-items: center;
-            @include xs-phone(){
+
+            @include xs-phone() {
                 width: 100%;
                 height: 60%;
                 margin-top: 100px;
@@ -340,9 +339,11 @@ footer {
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
+
     h1 {
         @extend .titulos-h1
     }
+
     .lista-precios {
         img {
             width: 100%;
@@ -351,6 +352,7 @@ footer {
             border-radius: 10px;
         }
     }
+
     form {
         background-color: rgba(174, 18, 145, 0.8);
         margin-top: 15px;
@@ -360,10 +362,12 @@ footer {
         height: 450px;
         border: none;
         border-radius: 10px;
+
         input {
             margin: 20px 0px;
         }
-        legend{
+
+        legend {
             h3 {
                 background: $btn-color;
                 background: linear-gradient(180deg, #22c1c3 0%, #e65cf0 100%);
@@ -372,20 +376,24 @@ footer {
                 padding: 5px;
             }
         }
-        div{
+
+        div {
             label {
                 margin-left: 10px;
             }
         }
+
         .btn-field {
             display: flex;
             justify-content: center;
+
             input {
-                color:$leter-color;
+                color: $leter-color;
                 background-color: #8a2be2;
                 padding: 10px 20px;
                 border: none;
                 box-shadow: 0 0 5px #ffff;
+
                 &:hover {
                     cursor: pointer;
                     background: #aa66ea;
@@ -402,24 +410,28 @@ footer {
     width: 100%;
     background: #eeaeae;
     background: radial-gradient(circle, #eeaeae 25%, #1790ff 87%);
+
     .map {
         text-align: center;
-        margin-top: 25px;
         padding-bottom: 50px;
-        h1{
+
+        h1 {
             padding: 20px;
             color: $leter-color;
         }
-        iframe{
-            @include xs-phone(){
+
+        iframe {
+            @include xs-phone() {
                 width: 350px;
                 height: 350px;
             }
         }
-        h2{
+
+        h2 {
             @include txtMap()
         }
-        p{
+
+        p {
             @include txtMap()
         }
     }
@@ -431,30 +443,38 @@ footer {
     background-color: $btn-color;
     color: $leter-color;
 }
-.tituloColor{
+
+.tituloColor {
     color: rgb(88, 19, 152) !important;
 }
+
 .bg-nav {
     background-color: rgb(221, 137, 221);
     color: $leter-color;
     font-size: 1.5rem;
 }
+
 .sizeTitulo {
     font-size: 1.5rem;
 }
+
 .size-p {
     font-size: 1.2rem;
 }
 
+.cursosPosition {
+    z-index: 10;
+}
 
 /* MEDIAS QUERIES */
 
 @media (max-width: 920px) {
     header {
         height: 200px;
+
         nav {
             flex-direction: column;
-    
+
         }
     }
 
@@ -465,34 +485,9 @@ footer {
         padding: 10px;
     }
 
-    .galeria {
-        margin-top: 50px;
-    }
-
-    .titulo {
-        margin-top: 50px;
-    }
-
-    .contenedor-cajas {
-        padding-top: 50px;
-    }
-
-    .map {
-        padding-top: 50px;
-
-    }
-
     .lista-precios {
         margin: auto;
 
-    }
-
-    .agenda h1 {
-        margin-top: 50px;
-    }
-
-    .mt-especial {
-        margin-top: 50px;
     }
 
 }
@@ -520,7 +515,8 @@ footer {
     .index-theme {
         background-image: url(../img/vertical.jpg);
         background-size: 100% 100%;
-        .titulo{
+
+        .titulo {
             p {
                 padding: 20px 50px;
             }
@@ -528,18 +524,13 @@ footer {
     }
 
     .agenda {
-        padding-top: 200px;
-        padding-bottom: 5px;
-        h1 {
-            margin-top: 0px;
-        }
+        padding-bottom: 15px;
     }
-
 
     .imagen {
         margin-top: 100px;
         width: 100%;
-        height: 65%;
+
         a {
             font-size: 20px;
         }
@@ -552,8 +543,7 @@ footer {
     }
 
     .map p {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
 
 }
-
