@@ -199,6 +199,11 @@ footer .derecha p {
   margin-bottom: 10px;
   border-radius: 8px;
 }
+@media (max-width: 400px) {
+  .galeria-tema .galeria img {
+    width: 350px !important;
+  }
+}
 .galeria-tema .modal {
   display: none;
 }
@@ -211,6 +216,11 @@ footer .derecha p {
   width: 100%;
   height: 100%;
   z-index: 30;
+}
+@media (max-width: 400px) {
+  .galeria-tema .modal:target {
+    display: none;
+  }
 }
 .galeria-tema .modal .imagen {
   margin-top: 60px;
@@ -447,9 +457,13 @@ footer .derecha p {
   .agenda {
     padding-bottom: 15px;
   }
+  .galeria a img {
+    width: 190px !important;
+  }
   .imagen {
     margin-top: 100px;
     width: 100%;
+    height: 75%;
   }
   .imagen a {
     font-size: 20px;
