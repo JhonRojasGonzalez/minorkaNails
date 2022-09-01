@@ -413,6 +413,10 @@ footer .derecha p {
   z-index: 10;
 }
 
+.bg-cursos {
+  background-color: #22c1c3;
+}
+
 /* MEDIAS QUERIES */
 @media (max-width: 920px) {
   header {
