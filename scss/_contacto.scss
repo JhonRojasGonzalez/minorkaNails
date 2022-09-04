@@ -1,0 +1,32 @@
+/* CSS CONTACTO */
+
+.info-map {
+    width: 100%;
+    background: #eeaeae;
+    background: radial-gradient(circle, #eeaeae 25%, #1790ff 87%);
+
+    .map {
+        text-align: center;
+        padding-bottom: 50px;
+
+        h1 {
+            padding: 20px;
+            color: $leter-color;
+        }
+
+        iframe {
+            @include xs-phone() {
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        h2 {
+            @include txtMap()
+        }
+
+        p {
+            @include txtMap()
+        }
+    }
+}

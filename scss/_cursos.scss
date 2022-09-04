@@ -1,0 +1,32 @@
+/* CURSOS CSS */
+
+.bg-color {
+    background-color: $btn-color;
+    color: $leter-color;
+}
+
+.tituloColor {
+    color: rgb(88, 19, 152) !important;
+}
+
+.bg-nav {
+    background-color: rgb(221, 137, 221);
+    color: $leter-color;
+    font-size: 1.5rem;
+}
+
+.sizeTitulo {
+    font-size: 1.5rem;
+}
+
+.size-p {
+    font-size: 1.2rem;
+}
+
+.cursosPosition {
+    z-index: 10;
+}
+
+.bg-cursos{
+    background-color: $btn-color;
+}

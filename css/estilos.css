@@ -1,7 +1,7 @@
 /* mixins */
 /* variables */
 /* Extends */
-.titulos-h1, .agenda h1, .service-theme .contenedor-cajas h1, .galeria-tema .galeria h1 {
+.titulos-h1, .service-theme .contenedor-cajas h1, .agenda h1, .galeria-tema .galeria h1 {
   background: #22c1c3;
   width: 100%;
   text-align: center;
@@ -264,40 +264,6 @@ footer .derecha p {
   color: white;
 }
 
-/* CSS SERVICIOS (contenedor de cajas)*/
-.service-theme {
-  background-image: url(../img/bg-animal_print.jpeg);
-}
-.service-theme .contenedor-cajas {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.service-theme .contenedor-cajas .boxService {
-  margin: 15px auto 15px;
-  width: 350px;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  line-height: 1.5;
-  box-shadow: 0px 0px 5px 10px rgba(220, 186, 255, 0.4);
-}
-.service-theme .contenedor-cajas .boxService:hover {
-  box-shadow: 0px 0px 10px 15px rgba(174, 104, 243, 0.4);
-}
-.service-theme .contenedor-cajas .boxService img {
-  width: 100%;
-}
-.service-theme .contenedor-cajas .boxService h3 {
-  text-align: center;
-  padding: 15px;
-}
-.service-theme .contenedor-cajas .boxService p {
-  padding: 20px 30px;
-}
-
 /*  CSS AGENDA */
 .agenda {
   background-image: url(../img/bg-agenda.jpg);
@@ -479,4 +445,37 @@ footer .derecha p {
   .map p {
     font-size: 1.5rem;
   }
+}
+/* CSS SERVICIOS (contenedor de cajas)*/
+.service-theme {
+  background-image: url(../img/bg-animal_print.jpeg);
+}
+.service-theme .contenedor-cajas {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.service-theme .contenedor-cajas .boxService {
+  margin: 15px auto 15px;
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 1.5;
+  box-shadow: 0px 0px 5px 10px rgba(220, 186, 255, 0.4);
+}
+.service-theme .contenedor-cajas .boxService:hover {
+  box-shadow: 0px 0px 10px 15px rgba(174, 104, 243, 0.4);
+}
+.service-theme .contenedor-cajas .boxService img {
+  width: 100%;
+}
+.service-theme .contenedor-cajas .boxService h3 {
+  text-align: center;
+  padding: 15px;
+}
+.service-theme .contenedor-cajas .boxService p {
+  padding: 20px 30px;
 }/*# sourceMappingURL=estilos.css.map */

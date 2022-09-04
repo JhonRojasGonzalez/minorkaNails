@@ -1,0 +1,47 @@
+/* ESTILO DEL FOOTER */
+
+footer {
+    background-color: $bg-color;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .izquierda {
+        padding: 0 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 280px;
+            height: 110px;
+            padding: 10px;
+        }
+
+        p {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+
+    .derecha {
+        padding: 0 22px;
+
+        img {
+            width: 70px;
+            height: 70px;
+            padding: 5px 5px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        p {
+            text-align: center;
+            padding: 5px;
+        }
+    }
+}

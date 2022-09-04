@@ -1,0 +1,90 @@
+/* MEDIAS QUERIES */
+
+@media (max-width: 920px) {
+    header {
+        height: 200px;
+
+        nav {
+            flex-direction: column;
+
+        }
+    }
+
+    .opciones {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .lista-precios {
+        margin: auto;
+
+    }
+
+}
+
+@media (max-width: 719px) {
+    .menuHide {
+        display: block !important;
+        margin-top: 30px;
+    }
+
+    .opcionesResponsive {
+        display: block !important;
+        left: -100%;
+        transition: all 0.3s linear;
+    }
+
+    .opciones {
+        display: none !important;
+    }
+
+    nav #home:checked+label~.opcionesResponsive {
+        left: 0%;
+    }
+
+    .index-theme {
+        background-image: url(../img/vertical.jpg);
+        background-size: 100% 100%;
+
+        .titulo {
+            p {
+                padding: 20px 50px;
+            }
+        }
+    }
+
+    .agenda {
+        padding-bottom: 15px;
+    }
+
+    .galeria {
+        a {
+            img {
+                width: 190px !important;
+            }
+        }
+    }
+
+    .imagen {
+        margin-top: 100px;
+        width: 100%;
+        height: 75%;
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+
+    iframe {
+        width: 390px;
+        height: 390px;
+    }
+
+    .map p {
+        font-size: 1.5rem;
+    }
+
+}

@@ -1,0 +1,72 @@
+/*  CSS AGENDA */
+
+.agenda {
+    background-image: url(../img/bg-agenda.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+
+    h1 {
+        @extend .titulos-h1
+    }
+
+    .lista-precios {
+        img {
+            width: 100%;
+            margin-top: 15px;
+            opacity: 0.8;
+            border-radius: 10px;
+        }
+    }
+
+    form {
+        background-color: rgba(174, 18, 145, 0.8);
+        margin-top: 15px;
+        font-size: 22px;
+        color: $leter-color;
+        width: 500px;
+        height: 450px;
+        border: none;
+        border-radius: 10px;
+
+        input {
+            margin: 20px 0px;
+        }
+
+        legend {
+            h3 {
+                background: $btn-color;
+                background: linear-gradient(180deg, #22c1c3 0%, #e65cf0 100%);
+                color: $leter-color;
+                border-radius: 5px;
+                padding: 5px;
+            }
+        }
+
+        div {
+            label {
+                margin-left: 10px;
+            }
+        }
+
+        .btn-field {
+            display: flex;
+            justify-content: center;
+
+            input {
+                color: $leter-color;
+                background-color: #8a2be2;
+                padding: 10px 20px;
+                border: none;
+                box-shadow: 0 0 5px #ffff;
+
+                &:hover {
+                    cursor: pointer;
+                    background: #aa66ea;
+                }
+            }
+        }
+    }
+}
